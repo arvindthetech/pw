@@ -115,7 +115,7 @@ export default function HomePage() {
         <Carousel.Item key={index}>
             <img
                 className="d-block w-100"
-                src={`${process.env.PUBLIC_URL}/img/${img}`}  // Correct path for GitHub Pages
+                src={`${process.env.PUBLIC_URL}/img/${img}`}  
                 alt={`Slide ${index + 1}`}
             />
         </Carousel.Item>

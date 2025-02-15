@@ -143,17 +143,28 @@ export default function HomePage() {
             {/* Course Section */}
             <h2 id="courses" className="text-center mt-4">Our Top Courses</h2>
             <div className="row">
-                {[{ title: "JEE Preparation", img: "/img/JEE.png" }, { title: "NEET Preparation", img: "/img/NEET.png" }, { title: "UPSC Foundation", img: "/img/UPSC.png" }].map((course, index) => (
-                    <div key={index} className="col-md-4">
-                        <div className="card p-3">
-                            <img src={course.img} className="card-img-top" alt={course.title} />
-                            <h3>{course.title}</h3>
-                            <p>Best courses for students</p>
-                            <button className="btn btn-primary w-100" onClick={copyCoupon}>Get Discount</button>
-                        </div>
-                    </div>
-                ))}
+    {[
+        { title: "JEE Preparation", img: "JEE.png" },
+        { title: "NEET Preparation", img: "NEET.png" },
+        { title: "UPSC Foundation", img: "UPSC.png" }
+    ].map((course, index) => (
+        <div key={index} className="col-md-4">
+            <div className="card p-3">
+                <img 
+                    src={`${process.env.PUBLIC_URL}/img/${course.img}`} 
+                    className="card-img-top" 
+                    alt={course.title} 
+                />
+                <h3>{course.title}</h3>
+                <p>Best courses for students</p>
+                <button className="btn btn-primary w-100" onClick={copyCoupon}>
+                    Get Discount
+                </button>
             </div>
+        </div>
+    ))}
+</div>
+
 
             {/* Universal Coupon Code Section */}
             <h2 className="text-center mt-5">Universal Coupon Code</h2>

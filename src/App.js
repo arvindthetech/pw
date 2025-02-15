@@ -111,12 +111,17 @@ export default function HomePage() {
 
             {/* Carousel Section */}
             <Carousel className="mt-4">
-                {["/img/C1.png", "/img/C2.png", "/img/C3.png"].map((img, index) => (
-                    <Carousel.Item key={index}>
-                        <img className="d-block w-100" src={img} alt={`Slide ${index + 1}`} />
-                    </Carousel.Item>
-                ))}
-            </Carousel>
+    {["C1.png", "C2.png", "C3.png"].map((img, index) => (
+        <Carousel.Item key={index}>
+            <img
+                className="d-block w-100"
+                src={`${process.env.PUBLIC_URL}/img/${img}`}  // Correct path for GitHub Pages
+                alt={`Slide ${index + 1}`}
+            />
+        </Carousel.Item>
+    ))}
+</Carousel>
+
 
             {/* Course Selection Section */}
             <h2 className="text-center mt-5">Select Your Course and Get Coupon Code</h2>

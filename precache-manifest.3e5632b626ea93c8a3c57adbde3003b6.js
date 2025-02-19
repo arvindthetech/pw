@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5dc1ff9aa258f4d512f6f51d425f05cf",
+    "revision": "4d6d4e443607aa361531ac8cde8ec591",
     "url": "/pwcouponcode/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/pwcouponcode/static/css/2.4e461ce0.chunk.css"
   },
   {
-    "revision": "a1d5a226eafe980e6b56",
+    "revision": "bd04542edb91473f3fd4",
     "url": "/pwcouponcode/static/css/main.5ecd60fb.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/pwcouponcode/static/js/2.bd03f4bf.chunk.js"
   },
   {
-    "revision": "a1d5a226eafe980e6b56",
-    "url": "/pwcouponcode/static/js/main.6b660292.chunk.js"
+    "revision": "bd04542edb91473f3fd4",
+    "url": "/pwcouponcode/static/js/main.5f65536e.chunk.js"
   },
   {
     "revision": "0117c5ef659ccde82175",
